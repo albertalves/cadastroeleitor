@@ -49,7 +49,7 @@ while ($linha = mysqli_fetch_assoc($listar_cadastro))
 }		
 
 //Paginção - Somar a quantidade de usuários
-$result_pg = "SELECT COUNT(id) AS num_result FROM cadastro";
+$result_pg = "SELECT COUNT(id) AS num_result FROM cadastro_eleitor";
 $resultado_pg = mysqli_query($conexao, $result_pg);
 $row_pg = mysqli_fetch_assoc($resultado_pg);
 //echo $row_pg['num_result'];
